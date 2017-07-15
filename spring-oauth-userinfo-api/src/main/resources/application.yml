@@ -1,0 +1,15 @@
+security:
+  basic:
+    enabled: false
+  sessions: stateless
+  oauth2:
+    client:
+      accessTokenUri: http://localhost:9999/uaa/oauth/token
+      userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
+      client-id: demo
+      client-secret: demo
+    resource:
+      user-info-uri: http://localhost:9999/uaa/user
+
+logging:
+  level.org.springframework.security: DEBUG
